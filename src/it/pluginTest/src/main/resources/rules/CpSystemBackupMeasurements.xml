@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<parseRules name="CpSystemBackupMeasurements">
+	<object name="Ph_0_49" type="Data1">
+		<unit>s</unit>
+		<data name="MAX">
+			<regex>.*Ph\s*0-49\s*\(SDT\).*MAX:\s*(.*)\s*seconds</regex>
+		</data>
+		<data name="MIN">
+			<regex>.*Ph\s*0-49\s*\(SDT\).*MIN:\s*(.*)\s*seconds</regex>
+		</data>
+		<data name="AVERAGE">
+			<regex>.*Ph\s*0-49\s*\(SDT\).*AVERAGE:\s*(.*)\s*seconds</regex>
+		</data>
+	</object>
+
+	<object name="Ph_1_254" type="Data1">
+		<unit>s</unit>
+		<data name="MAX">
+			<regex>.*Ph\s*1-254.*MAX:\s*(.*)\s*seconds</regex>
+		</data>
+		<data name="MIN">
+			<regex>.*Ph\s*1-254.*MIN:\s*(.*)\s*seconds</regex>
+		</data>
+		<data name="AVERAGE">
+			<regex>.*Ph\s*1-254.*AVERAGE:\s*(.*)\s*seconds</regex>
+		</data>
+	</object>
+
+	<object name="Duration_of_blade_restart" type="Data1">
+		<unit>s</unit>
+		<data name="MAX">
+			<regex>.*Duration of Blade restart till Active.*MAX:\s*(.*)\s*seconds</regex>
+		</data>
+		<data name="MIN">
+			<regex>.*Duration of Blade restart till Active.*MIN:\s*(.*)\s*seconds</regex>
+		</data>
+		<data name="AVERAGE">
+			<regex>.*Duration of Blade restart till Active.*AVERAGE:\s*(.*)\s*seconds</regex>
+		</data>
+	</object>
+
+</parseRules>

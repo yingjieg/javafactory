@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<parseRules name="ClusterBackupCharTestCaseDemo">
+	<object name="File_Dump_Size" type="Data1">
+		<unit>MB</unit>
+		<data name="VALUE">
+			<regex>.*File\s+Dump\s+Size:\s+(.*)\s+MB</regex>
+		</data>
+	</object>
+	<object name="MS_Dump_Size" type="Data1">
+		<unit>MB</unit>
+		<data name="VALUE">
+			<regex>.*MS\s+dump\s+size:\s+(.*)\s+MB</regex>
+		</data>
+	</object>
+	<object name="Large_Data_Dump_Size" type="Data1">
+		<unit>MB</unit>
+		<data name="VALUE">
+			<regex>.*Large\s+data\s+dump\s+size\s+\(MS\):\s+(.*)\s+MB</regex>
+		</data>
+	</object>
+	<object name="Total_Backup_Time" type="Data5">
+		<unit>s</unit>
+		<data name="MAX">
+			<regex>.*Total\s+Backup\s+Time.*MAX:\s+(.*)\s+seconds</regex>
+		</data>
+		<data name="MIN">
+			<regex>.*Total\s+Backup\s+Time.*MIN:\s+(.*)\s+seconds</regex>
+		</data>
+		<data name="AVERAGE">
+			<regex>.*Total\s+Backup\s+Time.*AVERAGE:\s+(.*)\s+seconds</regex>
+		</data>
+		<data name="MEDIAN">
+			<regex>.*Total\s+Backup\s+Time.*MEDIAN:\s+(.*)\s+seconds</regex>
+		</data>
+		<data name="STDEV">
+			<regex>.*Total\s+Backup\s+Time.*STDEV:\s+(.*)\s+seconds</regex>
+		</data>
+	</object>
+	<object name="Large_Data_Dump_Time" type="Data5">
+		<unit>s</unit>
+		<data name="MAX">
+			<regex>.*Large\s+Data\s+Dump\s+Time\s+\(s\).*MAX:\s+(.*)\s+seconds</regex>
+		</data>
+		<data name="MIN">
+			<regex>.*Large\s+Data\s+Dump\s+Time\s+\(s\).*MIN:\s+(.*)\s+seconds</regex>
+		</data>
+		<data name="AVERAGE">
+			<regex>.*Large\s+Data\s+Dump\s+Time\s+\(s\).*AVERAGE:\s+(.*)\s+seconds</regex>
+		</data>
+		<data name="MEDIAN">
+			<regex>.*Large\s+Data\s+Dump\s+Time\s+\(s\).*MEDIAN:\s+(.*)\s+seconds</regex>
+		</data>
+		<data name="STDEV">
+			<regex>.*Large\s+Data\s+Dump\s+Time\s+\(s\).*STDEV:\s+(.*)\s+seconds</regex>
+		</data>
+	</object>
+	<object name="Transfer_Rate_To_MS" type="Data5">
+		<unit>MB/s</unit>
+		<data name="MAX">
+			<regex>.*Transfer\s+rate\s+to\s+MS.*MAX:\s+(.*)\s+MB/s</regex>
+		</data>
+		<data name="MIN">
+			<regex>.*Transfer\s+rate\s+to\s+MS.*MIN:\s+(.*)\s+MB/s</regex>
+		</data>
+		<data name="AVERAGE">
+			<regex>.*Transfer\s+rate\s+to\s+MS.*AVERAGE:\s+(.*)\s+MB/s</regex>
+		</data>
+		<data name="MEDIAN">
+			<regex>.*Transfer\s+rate\s+to\s+MS.*MEDIAN:\s+(.*)\s+MB/s</regex>
+		</data>
+		<data name="STDEV">
+			<regex>.*Transfer\s+rate\s+to\s+MS.*STDEV:\s+(.*)\s+MB/s</regex>
+		</data>
+	</object>
+	<object name="Transfer_Rate_To_File" type="Data5">
+		<unit>MB/s</unit>
+		<data name="MAX">
+			<regex>.*Transfer\s+rate\s+to\s+File.*MAX:\s+(.*)\s+MB/s</regex>
+		</data>
+		<data name="MIN">
+			<regex>.*Transfer\s+rate\s+to\s+File.*MIN:\s+(.*)\s+MB/s</regex>
+		</data>
+		<data name="AVERAGE">
+			<regex>.*Transfer\s+rate\s+to\s+File.*AVERAGE:\s+(.*)\s+MB/s</regex>
+		</data>
+		<data name="MEDIAN">
+			<regex>.*Transfer\s+rate\s+to\s+File.*MEDIAN:\s+(.*)\s+MB/s</regex>
+		</data>
+		<data name="STDEV">
+			<regex>.*Transfer\s+rate\s+to\s+File.*STDEV:\s+(.*)\s+MB/s</regex>
+		</data>
+	</object>
+	<object name="Test_Relocation_Of_Stores_Time" type="Data5">
+		<unit>s</unit>
+		<data name="MAX">
+			<regex>.*Test/Relocation\s+of\s+Stores\s+Time.*MAX:\s+(.*)\s+seconds</regex>
+		</data>
+		<data name="MIN">
+			<regex>.*Test/Relocation\s+of\s+Stores\s+Time.*MIN:\s+(.*)\s+seconds</regex>
+		</data>
+		<data name="AVERAGE">
+			<regex>.*Test/Relocation\s+of\s+Stores\s+Time.*AVERAGE:\s+(.*)\s+seconds</regex>
+		</data>
+		<data name="MEDIAN">
+			<regex>.*Test/Relocation\s+of\s+Stores\s+Time.*MEDIAN:\s+(.*)\s+seconds</regex>
+		</data>
+		<data name="STDEV">
+			<regex>.*Test/Relocation\s+of\s+Stores\s+Time.*STDEV:\s+(.*)\s+seconds</regex>
+		</data>
+	</object>
+	<object name="Cluster_Session_Lock_Time" type="Data5">
+		<unit>s</unit>
+		<data name="MAX">
+			<regex>.*Cluster\s+Session\s+Lock\s+Time.*MAX:\s+(.*)\s+seconds</regex>
+		</data>
+		<data name="MIN">
+			<regex>.*Cluster\s+Session\s+Lock\s+Time.*MIN:\s+(.*)\s+seconds</regex>
+		</data>
+		<data name="AVERAGE">
+			<regex>.*Cluster\s+Session\s+Lock\s+Time.*AVERAGE:\s+(.*)\s+seconds</regex>
+		</data>
+		<data name="MEDIAN">
+			<regex>.*Cluster\s+Session\s+Lock\s+Time.*MEDIAN:\s+(.*)\s+seconds</regex>
+		</data>
+		<data name="STDEV">
+			<regex>.*Cluster\s+Session\s+Lock\s+Time.*STDEV:\s+(.*)\s+seconds</regex>
+		</data>
+	</object>
+	<object name="Backup_To_MS_Time" type="Data5">
+		<unit>s</unit>
+		<data name="MAX">
+			<regex>.*Backup\s+to\s+MS\s+Time.*MAX:\s+(.*)\s+seconds</regex>
+		</data>
+		<data name="MIN">
+			<regex>.*Backup\s+to\s+MS\s+Time.*MIN:\s+(.*)\s+seconds</regex>
+		</data>
+		<data name="AVERAGE">
+			<regex>.*Backup\s+to\s+MS\s+Time.*AVERAGE:\s+(.*)\s+seconds</regex>
+		</data>
+		<data name="MEDIAN">
+			<regex>.*Backup\s+to\s+MS\s+Time.*MEDIAN:\s+(.*)\s+seconds</regex>
+		</data>
+		<data name="STDEV">
+			<regex>.*Backup\s+to\s+MS\s+Time.*STDEV:\s+(.*)\s+seconds</regex>
+		</data>
+	</object>
+	<object name="Backup_To_File_Time" type="Data5">
+		<unit>s</unit>
+		<data name="MAX">
+			<regex>.*Backup\s+to\s+File\s+Time.*MAX:\s+(.*)\s+seconds</regex>
+		</data>
+		<data name="MIN">
+			<regex>.*Backup\s+to\s+File\s+Time.*MIN:\s+(.*)\s+seconds</regex>
+		</data>
+		<data name="AVERAGE">
+			<regex>.*Backup\s+to\s+File\s+Time.*AVERAGE:\s+(.*)\s+seconds</regex>
+		</data>
+		<data name="MEDIAN">
+			<regex>.*Backup\s+to\s+File\s+Time.*MEDIAN:\s+(.*)\s+seconds</regex>
+		</data>
+		<data name="STDEV">
+			<regex>.*Backup\s+to\s+File\s+Time.*STDEV:\s+(.*)\s+seconds</regex>
+		</data>
+	</object>
+</parseRules>
